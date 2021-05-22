@@ -1,0 +1,18 @@
+name: 'Quickbase Action'
+description: 'Deploy quickbase formulas and code pages'
+
+inputs:
+  app-id:
+    description: 'Application ID'
+    required: true
+    default: 'brcwig3fs'
+
+outputs:
+  version:
+    description: 'The version of the quickbase-cli tool'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.app-id }}
