@@ -18,4 +18,3 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.realm-hostname }}
-    - ${{ inputs.app-id }}
