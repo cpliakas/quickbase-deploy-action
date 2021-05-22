@@ -2,10 +2,12 @@ name: 'Quickbase Action'
 description: 'Deploy quickbase formulas and code pages'
 
 inputs:
+  realm-hostname:
+    description: 'Realm Hostname'
+    required: true
   app-id:
     description: 'Application ID'
     required: true
-    default: 'brcwig3fs'
 
 outputs:
   version:
@@ -15,4 +17,5 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
+    - ${{ inputs.realm-hostname }}
     - ${{ inputs.app-id }}

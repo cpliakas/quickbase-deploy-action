@@ -1,5 +1,6 @@
 #!/bin/sh -l
 
-echo "App ID: $1"
+echo "Realm Hostname: $1"
+echo "App ID: $2"
 version=$(quickbase-cli version)
 echo "::set-output name=version::$version"
