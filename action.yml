@@ -9,10 +9,6 @@ inputs:
     description: 'Application ID'
     required: true
 
-outputs:
-  version:
-    description: 'The version of the quickbase-cli tool'
-
 runs:
   using: 'docker'
   image: 'Dockerfile'
