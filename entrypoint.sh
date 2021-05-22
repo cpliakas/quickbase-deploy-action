@@ -4,7 +4,6 @@
 
 export QUICKBASE_REALM_HOSTNAME=$1
 export QUICKBASE_APP_ID=$2
-
 quickbase-cli formula deploy
 
 version=$(quickbase-cli version)
