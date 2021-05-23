@@ -1,4 +1,4 @@
-# Quickbase Action
+# Quickbase Deploy Action
 
 This action deploys Quickbase formulas and code pages to an app.
 

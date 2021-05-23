@@ -12,3 +12,4 @@ fi
 
 export QUICKBASE_REALM_HOSTNAME=$1
 quickbase-cli formula deploy
+exit $?
