@@ -1,12 +1,9 @@
-name: 'Quickbase Action'
+name: 'Quickbase Deploy Action'
 description: 'Deploy quickbase formulas and code pages'
 
 inputs:
   realm-hostname:
     description: 'Realm Hostname'
-    required: true
-  app-id:
-    description: 'Application ID'
     required: true
 
 runs:
